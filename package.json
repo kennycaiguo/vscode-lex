@@ -1,0 +1,26 @@
+{
+    "name": "lex",
+    "displayName": "Flex/Lex Language",
+    "description": "Flex/Lex Language support for Visual Studio Code.",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.41.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "license": "MIT",
+    "contributes": {
+        "languages": [{
+            "id": "lex",
+            "aliases": ["FLex/Lex", "lex"],
+            "extensions": ["flex", "lex"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "lex",
+            "scopeName": "source.lex",
+            "path": "./syntaxes/lex.tmLanguage.json"
+        }]
+    }
+}
