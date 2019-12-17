@@ -16,7 +16,7 @@
                 },
                 {
                     "begin": "/\\*",
-                    "end": "\\*/|$",
+                    "end": "\\*/",
                     "name": "comment.block.c.lex"
                 },
                 {
@@ -311,6 +311,16 @@
                 {
                     "begin": "\"",
                     "end": "\"",
+                    "name": "string.quoted.double.regexp.lex",
+                    "patterns": [
+                        {
+                            "include": "#re_escape"
+                        }
+                    ]
+                },
+                {
+                    "begin": "'",
+                    "end": "'",
                     "name": "string.quoted.double.regexp.lex",
                     "patterns": [
                         {
